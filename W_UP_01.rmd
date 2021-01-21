@@ -1,7 +1,7 @@
 ---
 title: "W_UP_01"
 author: "Shauna Breazeal"
-date: "Spring 2021"
+date: "20 Jan 2021"
 output: html_document
 ---
 
@@ -30,7 +30,8 @@ $H_A$: The average number of pushups done by line players is statistically diffe
 # Methods
 
 <!--Decide on your methods: use "variable analysis" or other appropriate descriptors. Make sure to choose at least one graphical method and at least one numerical method.!-->
-The number of push ups players can do is numeric.  The position they play is categorical.  
+
+The response variable is number of push ups in 2 minutes, the explanatroy variable is position: line, or skill.  
 We will use numeric ~ categorical
 
 
@@ -48,9 +49,17 @@ We will use numeric ~ categorical
 ```{r}
 boxplot(pushups~position,data=mydata)
 ```
+This box plot shows that the skill players seem to be able to do more pushups in 2 minutes than the line players
+
+
 ### Numerical Descriptive Results
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
+
+
+```{r}
+favstats(pushups~position,data=mydata)
+```
 
 ## Inferential Results
 
