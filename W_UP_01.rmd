@@ -49,6 +49,9 @@ We will use numeric ~ categorical
 ```{r}
 boxplot(pushups~position,data=mydata)
 ```
+
+
+
 This box plot shows that the skill players seem to be able to do more pushups in 2 minutes than the line players
 
 
